@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     minHeight: '100vh',
     backgroundColor: theme.palette.background.default,
     overflow: 'hidden',
+    margin: 0,
   },
   main: {
     backgroundColor: theme.palette.background.default,
