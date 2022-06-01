@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     flexDirection: 'column',
     minHeight: '100vh',
     backgroundColor: theme.palette.background.default,
+    overflow: 'hidden',
   },
   main: {
     backgroundColor: theme.palette.background.default,

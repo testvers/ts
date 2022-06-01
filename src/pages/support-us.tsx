@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   bg: {
     backgroundColor: '#DEDEDE',
+    overflowWrap: 'break-word',
   },
 }))
 
