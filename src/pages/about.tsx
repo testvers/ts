@@ -9,6 +9,7 @@ import Cards from '../components/card'
 import { createStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Shakeel from '../images/shakeel.jpg'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -43,13 +44,13 @@ const AboutUs: FC = () => {
               alt="President"
               title="Rehan"
               post="President"
-              description="Highly ambtious hardworking Pesident. Second to none."
+              description="Highly ambitious hardworking Pesident. Second to none in tharak."
               img={Rehan}
             />
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
             <Cards
-              alt="Vice-President"
+              alt="Vice President"
               title="Kashif"
               post="Vice President"
               description="True feminist."
@@ -58,11 +59,20 @@ const AboutUs: FC = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
             <Cards
-              alt="President"
+              alt="Advisor"
               title="Usman"
               post="Advisor"
               description='Founder of "Desire More"'
               img={Usman}
+            />
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
+            <Cards
+              alt="Advisor"
+              title="Shakeel"
+              post="Advisor"
+              description='Stage drama enthusiast.'
+              img={Shakeel}
             />
           </Grid>
         </Grid>
