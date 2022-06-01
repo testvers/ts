@@ -14,11 +14,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.paper,
     overflow: 'hidden',
   },
   main: {
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.paper,
   },
 }))
 
