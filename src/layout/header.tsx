@@ -8,7 +8,6 @@ import Brightness6Icon from '@material-ui/icons/Brightness6'
 import Logo from '../images/logo.png'
 
 const useStyles = makeStyles({
-  toolbar: {},
   title: {
     flexGrow: 1,
   },
@@ -19,7 +18,7 @@ const useStyles = makeStyles({
     backgroundColor: 'black'
   },
   logo: {
-    maxWidth: 40,
+    maxWidth: 80,
     marginRight: '10px',
     marginLeft: '5px'
   }
@@ -40,7 +39,7 @@ const Header: FC<HeaderProps> = ({ siteTitle = '' }) => {
 
   return (
     <AppBar className={classes.head} component="header" position="static">
-      <Toolbar className={classes.toolbar}>
+      <Toolbar>
         <img src={Logo} alt="Tharak Society" className={classes.logo} />
         <Typography variant="h6" className={classes.title}>
           <Link
