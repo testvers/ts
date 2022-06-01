@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Typography, Container, Theme, Button } from '@material-ui/core'
-
+import Hero from '../components/hero'
 import SEO from '../components/seo'
 
 const useStyles = makeStyles((theme: Theme) => ({
