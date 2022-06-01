@@ -37,8 +37,8 @@ const AboutUs: FC = () => {
 
       <Typography variant="h4">Members:</Typography>
       <div className={classed.root}>
-        <Grid container spacing={3}>
-          <Grid item xs={6}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
             <Cards
               alt="President"
               title="Rehan"
@@ -47,7 +47,7 @@ const AboutUs: FC = () => {
               img={Rehan}
             />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
             <Cards
               alt="Vice-President"
               title="Kashif"
@@ -56,7 +56,7 @@ const AboutUs: FC = () => {
               img={Kashif}
             />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
             <Cards
               alt="President"
               title="Usman"
