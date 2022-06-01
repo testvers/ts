@@ -14,6 +14,9 @@ const useStyles = makeStyles({
   link: {
     textDecoration: 'none !important',
   },
+  head: {
+    backgroundColor: 'black'
+  }
 })
 
 export interface HeaderProps {
@@ -28,10 +31,9 @@ const Header: FC<HeaderProps> = ({ siteTitle = '' }) => {
     dispatch(toggleTheme())
   }
 
-  console.log('mount header')
 
   return (
-    <AppBar component="header" position="static">
+    <AppBar className={classes.head} component="header" position="static">
       <Toolbar className={classes.toolbar}>
         <Typography variant="h6" className={classes.title}>
           <Link
