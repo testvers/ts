@@ -35,8 +35,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Tharak Society`,
-        short_name: `Tharak`,
+        name: `Tharak Society | desire more`,
+        short_name: `Tharak Society
+`,
         start_url: `/`,
         background_color: `#000000`,
         theme_color: `#000000`,
