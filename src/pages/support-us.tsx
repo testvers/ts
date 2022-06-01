@@ -28,10 +28,8 @@ const SupportUs: FC = () => {
   return (
     <Container maxWidth="md" className={classes.root}>
       <SEO title="Support Us" />
-      <Typography variant="h2" gutterBottom component="h1">
-        Support Us
-      </Typography>
-
+      <Hero title="Support Us" description="Payments Coming soon."></Hero>
+      {/*
       <Typography variant="body1">For Web 3.0 payments.</Typography>
       <Typography variant="h6">Walet Address:</Typography>
       <Typography className={classes.bg} variant="body1">
@@ -48,7 +46,7 @@ const SupportUs: FC = () => {
         </Button>
         {copySuccess}
       </div>
-      <Typography variant="body1">Web 2.0 payments coming soon...</Typography>
+      <Typography variant="body1">Web 2.0 payments coming soon...</Typography>*/}
     </Container>
   )
 }
