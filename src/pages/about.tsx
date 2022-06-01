@@ -2,9 +2,9 @@ import React, { FC } from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Typography, Container, Theme } from '@material-ui/core'
 import SEO from '../components/seo'
-import Kashif from '../images/Logo.png'
-import Rehan from '../images/Logo.png'
-import Usman from '../images/Logo.png'
+import Kashif from '../images/logo.png'
+import Rehan from '../images/logo.png'
+import Usman from '../images/logo.png'
 import Cards from '../components/card'
 
 const useStyles = makeStyles((theme: Theme) => ({
