@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { Link as GatsbyLink } from 'gatsby'
-import { Grid, Button, Theme } from '@material-ui/core'
+import { Grid, Button, Theme, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
 
 import SEO from '../components/seo'
@@ -21,7 +21,9 @@ const IndexPage: FC = () => {
         title="Tharak Society"
         description="Tharak Society helping people to interact, learn and grow. Desire More."
       >
-        <h2>Coming Soon...</h2>
+        <Typography variant="h2" gutterBottom component="h1">
+          Coming Soon...
+        </Typography>
         <div className={classes.heroButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
@@ -32,6 +34,26 @@ const IndexPage: FC = () => {
                 color="primary"
               >
                 About Us
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button
+                component={GatsbyLink}
+                to="/join-us/"
+                variant="contained"
+                color="primary"
+              >
+                Join Us
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button
+                component={GatsbyLink}
+                to="/support-us/"
+                variant="contained"
+                color="primary"
+              >
+                Support Us
               </Button>
             </Grid>
           </Grid>

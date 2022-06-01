@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { makeStyles, ThemeProvider } from '@material-ui/styles'
-import { Theme } from '@material-ui/core'
+import { Paper, Theme } from '@material-ui/core'
 import { useSelector } from 'react-redux'
 
 import Header from './header'
@@ -25,11 +25,11 @@ const LayoutComponent: FC = ({ children }) => {
   const classes = useStyles()
   const { title } = useSiteMetadata()
   return (
-    <div className={classes.root}>
+    <Paper className={classes.root}>
       <Header siteTitle={title} />
       <main className={classes.main}>{children}</main>
       <Footer />
-    </div>
+    </Paper>
   )
 }
 

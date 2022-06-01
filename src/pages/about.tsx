@@ -1,35 +1,52 @@
 import React, { FC } from 'react'
-import { Link as GatsbyLink } from 'gatsby'
 import { makeStyles } from '@material-ui/styles'
-import { Typography, Link, Container, Theme } from '@material-ui/core'
-
+import { Typography, Container, Theme } from '@material-ui/core'
 import SEO from '../components/seo'
+import Kashif from '../images/Logo.png'
+import Rehan from '../images/Logo.png'
+import Usman from '../images/Logo.png'
+import Cards from '../components/card'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
   },
 }))
 
-const SecondPage: FC = () => {
+const AboutUs: FC = () => {
   const classes = useStyles()
   return (
     <Container maxWidth="md" className={classes.root}>
       <SEO title="About Us" />
       <Typography variant="h2" gutterBottom component="h1">
-        Hi from the second page
+        About Us
       </Typography>
 
-      <Typography variant="body1">Welcome to page 2.</Typography>
-
-      <Typography variant="body1">
-        <Link component={GatsbyLink} to="/">
-          Go back to the homepage
-        </Link>
-      </Typography>
+      <Typography variant="h4">Members:</Typography>
+      <Cards
+        alt="President"
+        title="Rehan"
+        post="President"
+        description="Highly ambtious hardworking Pesident. Second to none."
+        img={Rehan}
+      />
+      <Cards
+        alt="Vice-President"
+        title="Kashif"
+        post="Vice President"
+        description="True feminist."
+        img={Kashif}
+      />
+      <Cards
+        alt="President"
+        title="Usman"
+        post="Advisor"
+        description='Founder of "Desire More"'
+        img={Usman}
+      />
     </Container>
   )
 }
 
-export default SecondPage
+export default AboutUs
