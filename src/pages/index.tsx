@@ -21,16 +21,17 @@ const IndexPage: FC = () => {
         title="Tharak Society"
         description="Tharak Society helping people to interact, learn and grow. Desire More."
       >
+        <h2>Coming Soon...</h2>
         <div className={classes.heroButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
               <Button
                 component={GatsbyLink}
-                to="/page-2/"
+                to="/about/"
                 variant="contained"
                 color="primary"
               >
-                Go to page 2
+                About Us
               </Button>
             </Grid>
           </Grid>

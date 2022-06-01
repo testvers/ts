@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     flexGrow: 1,
   },
   link: {
-    textDecoration: 'none',
+    textDecoration: 'none !important',
   },
 })
 

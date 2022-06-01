@@ -1,16 +1,10 @@
 {
-  "name": "gatsby-material-typescript-starter",
+  "name": "tharak-society",
   "private": true,
-  "description": "A simple starter using Typescript & Material-ui",
+  "description": "Tharak Society helping people to interact, learn and grow. Desire More.",
   "version": "0.1.0",
-  "author": "Julien CARON <juliencaron@protonmail.com>",
-  "keywords": [
-    "gatsby",
-    "typescript",
-    "eslint",
-    "prettier",
-    "material-ui"
-  ],
+  "author": "ahm",
+  "keywords": ["gatsby", "typescript", "eslint", "prettier", "material-ui"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -60,12 +54,5 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
     "typescript": "^3.9.7"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Junscuzzy/gatsby-material-typescript-starter"
-  },
-  "bugs": {
-    "url": "https://github.com/Junscuzzy/gatsby-material-typescript-starter/issues"
   }
 }

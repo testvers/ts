@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Typescript blog Starter`,
-    description: `A simple blog starter using Typescript in front & back side with eslint & prettier.`,
+    title: `Tharak society`,
+    description: `Tharak Society helping people to interact, learn and grow. Desire More.`,
     author: {
-      name: 'Julien CARON',
+      name: 'testvers',
       content: 'I like build some things using Javascript',
     },
     social: {
-      github: 'https://github.com/Junscuzzy',
+      github: 'https://github.com/testvers',
     },
   },
   plugins: [
