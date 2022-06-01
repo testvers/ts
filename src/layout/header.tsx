@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/styles'
 import { useDispatch } from 'react-redux'
 import { toggleTheme } from '../redux/appModule'
 import Brightness6Icon from '@material-ui/icons/Brightness6'
+import Logo from '../images/logo.png'
 
 const useStyles = makeStyles({
   toolbar: {},
@@ -16,6 +17,11 @@ const useStyles = makeStyles({
   },
   head: {
     backgroundColor: 'black'
+  },
+  logo: {
+    maxWidth: 40,
+    marginRight: '10px',
+    marginLeft: '5px'
   }
 })
 
@@ -35,6 +41,7 @@ const Header: FC<HeaderProps> = ({ siteTitle = '' }) => {
   return (
     <AppBar className={classes.head} component="header" position="static">
       <Toolbar className={classes.toolbar}>
+        <img src={Logo} alt="Tharak Society" className={classes.logo} />
         <Typography variant="h6" className={classes.title}>
           <Link
             to="/"
