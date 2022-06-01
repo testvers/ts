@@ -6,6 +6,9 @@ import Kashif from '../images/kashif.jpg'
 import Rehan from '../images/rehan.jpg'
 import Usman from '../images/usman.jpg'
 import Cards from '../components/card'
+import { createStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -14,8 +17,17 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }))
 
+const useStyled = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      flexGrow: 1,
+    },
+  }),
+);
+
 const AboutUs: FC = () => {
   const classes = useStyles()
+  const classed = useStyled()
   return (
     <Container maxWidth="md" className={classes.root}>
       <SEO title="About Us" />
@@ -24,27 +36,37 @@ const AboutUs: FC = () => {
       </Typography>
 
       <Typography variant="h4">Members:</Typography>
-      <Cards
-        alt="President"
-        title="Rehan"
-        post="President"
-        description="Highly ambtious hardworking Pesident. Second to none."
-        img={Rehan}
-      />
-      <Cards
-        alt="Vice-President"
-        title="Kashif"
-        post="Vice President"
-        description="True feminist."
-        img={Kashif}
-      />
-      <Cards
-        alt="President"
-        title="Usman"
-        post="Advisor"
-        description='Founder of "Desire More"'
-        img={Usman}
-      />
+      <div className={classed.root}>
+        <Grid container spacing={3}>
+          <Grid item xs={6}>
+            <Cards
+              alt="President"
+              title="Rehan"
+              post="President"
+              description="Highly ambtious hardworking Pesident. Second to none."
+              img={Rehan}
+            />
+          </Grid>
+          <Grid item xs={6}>
+            <Cards
+              alt="Vice-President"
+              title="Kashif"
+              post="Vice President"
+              description="True feminist."
+              img={Kashif}
+            />
+          </Grid>
+          <Grid item xs={6}>
+            <Cards
+              alt="President"
+              title="Usman"
+              post="Advisor"
+              description='Founder of "Desire More"'
+              img={Usman}
+            />
+          </Grid>
+        </Grid>
+      </div>
     </Container>
   )
 }
