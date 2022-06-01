@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     minHeight: '100vh',
     backgroundColor: theme.palette.background.default,
     overflow: 'hidden',
-    margin: 0,
   },
   main: {
     backgroundColor: theme.palette.background.default,
@@ -27,7 +26,7 @@ const LayoutComponent: FC = ({ children }) => {
   const classes = useStyles()
   const { title } = useSiteMetadata()
   return (
-    <Paper className={classes.root}>
+    <Paper className={classes.root} square>
       <Header siteTitle={title} />
       <main className={classes.main}>{children}</main>
       <Footer />
