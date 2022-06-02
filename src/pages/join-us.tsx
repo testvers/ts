@@ -16,7 +16,7 @@ const JoinUs: FC = () => {
   const classes = useStyles()
   return (
     <Container maxWidth="md" className={classes.root}>
-      <SEO title="Join Us" />
+      <SEO title="Join Us" description="Join hands in this noble cause."/>
       <Hero title="Join Us" description="We will start auditions soon."></Hero>
     </Container>
   )

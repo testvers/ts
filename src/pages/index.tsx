@@ -16,7 +16,7 @@ const IndexPage: FC = () => {
   const classes = useStyles()
   return (
     <>
-      <SEO title="Tharak Society" />
+      <SEO title="Tharak Society" description="Helping people to interact, learn and grow. Desire more." />
       <Hero
         title="Tharak Society"
         description="Tharak Society helping people to interact, learn and grow. Desire More."

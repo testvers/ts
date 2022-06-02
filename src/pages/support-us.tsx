@@ -27,7 +27,7 @@ const SupportUs: FC = () => {
 
   return (
     <Container maxWidth="md" className={classes.root}>
-      <SEO title="Support Us" />
+      <SEO title="Support Us" description="Encourage us with your money"/>
       <Hero title="Support Us" description="Payments Coming soon."></Hero>
       {/*
       <Typography variant="body1">For Web 3.0 payments.</Typography>
