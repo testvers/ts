@@ -22,7 +22,7 @@ module.exports = {
         // },
       },
     },
-    {
+    {/*
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
@@ -31,7 +31,7 @@ module.exports = {
         // Setting this parameter is optional
         anonymize: true,
       },
-    },
+    */},
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

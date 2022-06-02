@@ -40,7 +40,14 @@ const Header: FC<HeaderProps> = ({ siteTitle = '' }) => {
   return (
     <AppBar className={classes.head} component="header" position="static">
       <Toolbar>
-        <img src={Logo} alt="Tharak Society" className={classes.logo} />
+        <Link
+          to="/"
+          component={GatsbyLink}
+          color="inherit"
+          className={classes.link}
+        >
+          <img src={Logo} alt="Tharak Society" className={classes.logo} />
+        </Link>
         <Typography variant="h6" className={classes.title}>
           <Link
             to="/"

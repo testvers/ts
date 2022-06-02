@@ -1,30 +1,40 @@
-import React, { FC } from 'react'
+import React from 'react';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
 
-import { makeStyles } from '@material-ui/styles'
-import { Container, Typography, Theme } from '@material-ui/core'
-
-const useStyles = makeStyles((theme: Theme) => ({
-  footer: {
-    padding: theme.spacing(2, 1),
-    marginTop: 'auto',
-    backgroundColor: 'grey',
-  },
-  color: {
-    color: 'white',
-  },
-}))
-
-const Footer: FC = () => {
-  const classes = useStyles()
+function Copyright() {
   return (
-    <footer className={classes.footer}>
-      <Container maxWidth="md">
-        <Typography variant="h6" className={classes.color}>
-          © {new Date().getFullYear()}, Tharak Society
-        </Typography>
-      </Container>
-    </footer>
-  )
+    <Typography variant="body2" color="textSecondary">
+      {'Copyright © '}
+      <Link color="inherit" href="https://tharaksociety.netlify.app/">
+        Tharak Society
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
 }
 
-export default Footer
+const useStyles = makeStyles((theme) => ({
+  footer: {
+    padding: theme.spacing(3, 2),
+    marginTop: 'auto',
+    backgroundColor:
+      theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
+  },
+}));
+
+export default function Footer() {
+  const classes = useStyles();
+
+  return (
+    <footer className={classes.footer}>
+      <Container maxWidth="sm">
+        <Typography variant="body1">Desire More</Typography>
+        <Copyright />
+      </Container>
+    </footer>
+  );
+}
