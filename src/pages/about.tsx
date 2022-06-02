@@ -10,6 +10,7 @@ import { createStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Shakeel from '../images/shakeel.jpg'
+import Hamza from '../images/hamza.jpg'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -73,6 +74,15 @@ const AboutUs: FC = () => {
               post="Advisor"
               description='Stage drama enthusiast.'
               img={Shakeel}
+            />
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
+            <Cards
+              alt="Advisor"
+              title="Hamza"
+              post="Advisor"
+              description='Sad launda.'
+              img={Hamza}
             />
           </Grid>
         </Grid>
