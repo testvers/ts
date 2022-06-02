@@ -43,11 +43,12 @@ const AboutUs: FC = () => {
           <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
             <Cards
               alt="President"
-              title="Rehan"
+              title="Hamza"
               post="President"
-              description="Highly ambitious hardworking Pesident. Second to none in tharak."
-              img={Rehan}
+              description='A true supporter of gender equality. Ex-CEO of brazzers.'
+              img={Hamza}
             />
+          </Grid>
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
             <Cards
@@ -78,13 +79,12 @@ const AboutUs: FC = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
             <Cards
-              alt="Advisor"
-              title="Hamza"
-              post="Advisor"
-              description='Sad launda.'
-              img={Hamza}
+              alt="Founder"
+              title="Rehan"
+              post="Founder"
+              description="Highly ambitious hardworking Founder. Second to none in tharak."
+              img={Rehan}
             />
-          </Grid>
         </Grid>
       </div>
     </Container>
