@@ -39,7 +39,7 @@ const AboutUs: FC = () => {
 
       <Typography variant="h4">Members:</Typography>
       <div className={classed.root}>
-        {/*<Grid container spacing={2}>
+        <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
             <Cards
               alt="Founder"
@@ -85,7 +85,7 @@ const AboutUs: FC = () => {
               img={Shakeel}
             />
           </Grid>
-        </Grid>*/} 
+        </Grid>
       </div>
     </Container>
   )
