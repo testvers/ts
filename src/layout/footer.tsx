@@ -8,7 +8,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary">
       {'Copyright © '}
-      <Link color="inherit" href="https://tharaksociety.netlify.app/">
+      <Link color="inherit" to="https://tharaksociety.tk/">
         Tharak Society
       </Link>{' '}
       {new Date().getFullYear()}
