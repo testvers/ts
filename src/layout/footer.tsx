@@ -20,7 +20,12 @@ function Copyright() {
 }
 
 const useStyles = makeStyles((theme) => ({
-  footer: {
+    root: {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
+  },
+footer: {
     padding: theme.spacing(3, 2),
     marginTop: 'auto',
     backgroundColor:
@@ -32,31 +37,14 @@ export default function Footer() {
   const classes = useStyles();
 
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        minHeight: '100vh',
-      }}
-    >
+    <div className={classes.root}>
       <CssBaseline />
-    <Box
-        component="footer"
-        sx={{
-          py: 3,
-          px: 2,
-          mt: 'auto',
-          backgroundColor: (theme) =>
-            theme.palette.mode === 'light'
-              ? theme.palette.grey[200]
-              : theme.palette.grey[800],
-        }}
-      >
+    <footer className={classes.footer}>
       <Container maxWidth="sm">
         <Typography variant="body1">Desire More</Typography>
         <Copyright />
       </Container>
-    </Box>
-    </Box>
+    </footer>
+    </div>
   );
 }
