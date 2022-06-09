@@ -36,7 +36,7 @@ export default function Footer() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div>
       <CssBaseline />
     <footer className={classes.footer}>
       <Container maxWidth="sm">
