@@ -36,14 +36,13 @@ export default function Footer() {
   const classes = useStyles();
 
   return (
-    <div>
-      <CssBaseline />
+      
     <footer className={classes.footer}>
+<CssBaseline />
       <Container maxWidth="sm">
         <Typography variant="body1">Desire More</Typography>
         <Copyright />
       </Container>
     </footer>
-    </div>
   );
 }
