@@ -36,7 +36,7 @@ const AboutUs: FC = () => {
       <Typography variant="h2" gutterBottom component="h1">
         About Us
       </Typography>
-
+{*/
       <Typography variant="h4">Members:</Typography>
       <div className={classed.root}>
         <Grid container spacing={2}>
@@ -86,7 +86,7 @@ const AboutUs: FC = () => {
             />
           </Grid>
         </Grid>
-      </div>
+      </div>*/} 
     </Container>
   )
 }
